@@ -9,8 +9,8 @@
 
 
 ## 테이블 설계 ##
-<ul><li>결제</li></ul>
-* 테이블명 : payment
+
+<p>* 테이블명 : payment</p>
 <ul>    
 <li>management_no bigint not null                </li>
 <li>amount bigint not null                       </li>
@@ -26,8 +26,7 @@
 <li>vat bigint not null                          </li>
 <li>primary key (management_no)                   </li>
 </ul>    
-<ul><li>결제인터페이스</li></ul>
-* 테이블명 : payment_interface
+<p>* 테이블명 : payment_interface</p>
 <ul>
 <li>interface_number bigint not null         </li>
 <li>body varchar(416)                        </li>
