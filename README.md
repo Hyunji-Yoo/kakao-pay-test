@@ -10,35 +10,33 @@
 
 ## 테이블 설계 ##
 <ul><li>결제</li></ul>
-<p>
-    create table payment (
-       management_no bigint not null,
-        amount bigint not null,
-        canceled varchar(1),
-        payment_card_no varchar(255),
-        payment_cvc varchar(255),
-        payment_encrypted_value varchar(255),
-        payment_expiry_date varchar(255),
-        installment_plan varchar(2) not null,
-        original_management_no varchar(20),
-        payment_type varchar(10) not null,
-        reserve varchar(47),
-        vat bigint not null,
-        primary key (management_no)
-    )
-</p>    
+* 테이블명 : payment
+<ul>    
+<li>management_no bigint not null                </li>
+<li>amount bigint not null                       </li>
+<li>canceled varchar(1)                          </li>
+<li>payment_card_no varchar(255)                 </li>
+<li>payment_cvc varchar(255)                     </li>
+<li>payment_encrypted_value varchar(255)         </li>
+<li>payment_expiry_date varchar(255)             </li>
+<li>installment_plan varchar(2) not null         </li>
+<li>original_management_no varchar(20)           </li>
+<li>payment_type varchar(10) not null            </li>
+<li>reserve varchar(47)                          </li>
+<li>vat bigint not null                          </li>
+<li>primary key (management_no)                   </li>
+</ul>    
 <ul><li>결제인터페이스</li></ul>
-<p>
-    create table payment_interface (
-       interface_number bigint not null,
-        body varchar(416),
-        entire_data varchar(450),
-        header varchar(34),
-        management_no bigint,
-        payment_type varchar(10) not null,
-        primary key (interface_number)
-    )
-</p>
+* 테이블명 : payment_interface
+<ul>
+<li>interface_number bigint not null         </li>
+<li>body varchar(416)                        </li>
+<li>entire_data varchar(450)                 </li>
+<li>header varchar(34)                       </li>
+<li>management_no bigint                     </li>
+<li>payment_type varchar(10) not null        </li>
+<li>primary key (interface_number)           </li>
+</ul>
 
 
 ## 문제해결 전략 ##
